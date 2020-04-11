@@ -10,15 +10,15 @@
 # ========================================================================================
 #
 # @author Jay Wheeler.
-# @version 0.0.1
-# @copyright © 2018. EarthWalk Software.
+# @version 3.10.0
+# @copyright © 2018, 2020. EarthWalk Software.
 # @license Licensed under the GNU General Public License, GPL-3.0-or-later.
 # @package alpine-htop
 # @subpackage Dockerfile
 #
 # ========================================================================================
 #
-#	Copyright © 2018. EarthWalk Software
+#	Copyright © 2018, 2020. EarthWalk Software
 #	Licensed under the GNU General Public License, GPL-3.0-or-later.
 #
 #   This file is part of ewsdocker/alpine-htop.
@@ -43,7 +43,7 @@
 #     docker run -it --rm --pid=host userns=host ewsdocker/alpine-htop:latest
 #
 # ========================================================================================
-FROM  nimmis/alpine-micro:edge
+FROM  ewsdocker/alpine-base:3.10.0
 
 RUN apk add --update htop \
  && rm -rf /var/cache/apk/*
