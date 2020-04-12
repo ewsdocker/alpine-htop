@@ -39,4 +39,5 @@ Read the license at https://github.com/ewsdocker/alpine-htop/wiki/License
 
 ### Attribution
 
- Based on example **run htop inside a container** from the **docker run** reference at       https://docs.docker.com/engine/reference/run/#example-run-htop-inside-a-container
+ Based on example **run htop inside a container** from the **docker run** reference at 
+ https://docs.docker.com/engine/reference/run/#example-run-htop-inside-a-container
