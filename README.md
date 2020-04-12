@@ -1,4 +1,4 @@
-# ewsdocker/docker-alpine-htop
+# ewsdocker/alpine-htop
 --------------------- 
 
 This is a very small (16 MB) **Alpine Linux** docker implementation of the *htop* example in the **docker run** reference (see below).  It is a simple example of the use of the built-in **PID Namespace** (*--pid=*) Linux virtualization.
@@ -15,7 +15,7 @@ A docker image is available for download from **[ewsdocker/alpine-htop](https://
 
 ### Dockerfile
 
-    FROM nimmis/micro-alpine:edge
+    FROM ewsdocker/alpine-base:3.10.0
     RUN apk add --update htop && rm -rf /var/cache/apk/*
     CMD ["htop"]**  
 
@@ -24,7 +24,7 @@ A docker image is available for download from **[ewsdocker/alpine-htop](https://
 ### Running alpine-htop  
 The following line will install and run **[ewsdocker/alpine-htop](https://hub.docker.com/r/ewsdocker/alpine-htop)**:
 
-    docker run -it --rm --pid=host --userns=host ewsdocker/alpine-htop:latest 
+    docker run -it --rm --pid=host --userns=host --name=htop ewsdocker/alpine-htop:3.10.0 
 
 ---------------------
 
